@@ -3,6 +3,17 @@
         width: 100%;
     }
     .container{
-        overflow-x: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexons{
+        padding: 8em;
+        margin: 1em !important;
+    }
+}
+@media (max-width: 580px){
+    .flexons{
+        padding: 0;
     }
 }

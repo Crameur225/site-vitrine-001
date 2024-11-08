@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./style.css";
 import image from "../../assets/baby.jpg";
 import image1 from "../../assets/baby-1.jpg"
@@ -8,38 +8,40 @@ import image4 from "../../assets/baby-4.jpg"
 
 export function Banner() {
   const [selectOption, setSelectOption] = useState("Category");
-  const [isVisible, setIsVisible] = useState(true)
-  const [isForm, setIsForm] = useState(true)
-  useEffect(() =>{
-   function handleVisible(){
-    if(innerWidth <= 760){
+  const [isVisible, setIsVisible] = useState(window.innerWidth > 800)
+  const [isForm, setIsForm] = useState(window.innerWidth > 700)
+
+  function handleVisible(){
+    if(innerWidth <= 800 && isVisible){
         setIsVisible(false)
-    }else{
+    }else if(window.innerWidth > 800 && !isVisible) {
         setIsVisible(true)
     }
    }
-   
-   window.addEventListener('resize', handleVisible);
 
+  useEffect(() =>{ 
+   window.addEventListener('resize', handleVisible);
    return() => {
     window.removeEventListener('resize', handleVisible)
 } 
-  }, [])
+  }, [isVisible])
   
+  // Form
+  function handleForm(){
+    if(innerWidth <= 700 && isForm){
+        setIsForm(false)
+    }else if(window.innerWidth > 700 && !isForm){
+        setIsForm(true)
+    }
+ }
   useEffect(() =>{
-     function handleForm(){
-        if(innerWidth <= 480){
-            setIsForm(false)
-        }else{
-            setIsForm(true)
-        }
-     }
+     
      window.addEventListener('resize', handleForm)
 
      return() => {
         window.removeEventListener('resize', handleForm)
     } 
-  }, [])
+  }, [isForm])
 
   const handleChange = (e) => {
     setSelectOption(e.target.value);

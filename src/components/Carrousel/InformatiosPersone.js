@@ -1,12 +1,12 @@
 export const PERSONNES = [
     {
         id:1,
-        img: '/image/personnes.jpg',
+        img: 'https://avatars.githubusercontent.com/u/137006116?v=4',
         profils: 'Profile',
-        title: "Developpeur Jeux/Ionic/Angular",
+        title: "Developpeur Frontend REACTJS",
         content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae dolor !',
-        auteur: 'LeLouch',
-        niveau: "Senior"
+        auteur: 'Crameur225',
+        niveau: "junior"
     },
     {
         id:2,

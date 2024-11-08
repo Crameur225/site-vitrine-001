@@ -1,7 +1,7 @@
 
 export function Carrousel({img, profils, title, content, author, level}){
     return(
-     <div className='w-full'>
+     <div className='w-ful'>
          <div className="flex w-[100%] px-2 justify-between items-center ">
         <div className='w-[60%]'>
             <img  style={{width: "30em", height: "30em", borderRadius: "0.5em"} } src={img} alt="" />

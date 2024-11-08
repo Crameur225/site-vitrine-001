@@ -33,7 +33,7 @@ export function Carrousels(){
                    <h2 className="text-2xl font-bold">{pers.title}</h2>
                    <p className="text-gray-700 text-2xl">{pers.content}</p>
                    <p className="text-lg font-medium"><span className="font-bold">Author</span> {pers.auteur}</p>
-                   <p className="text-lg font-medium"><span className="font-bold">Author</span> {pers.niveau}</p>
+                   <p className="text-lg font-medium"><span className="font-bold">Niveau</span> {pers.niveau}</p>
                   </div>
                 </div>
                 );
