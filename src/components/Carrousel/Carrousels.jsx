@@ -18,7 +18,7 @@ export function Carrousels(){
     
     return(
         
-      <div className="class-second relative py-20 bg- w-full max-w-4xl mx-auto">
+      <div className="class-second relative py-16 bg- w-full max-w-4xl mx-auto">
         <div className="overflow-hidden relative">
          <div className="flex transition-transform duration-500 ease-out"
          style={{ transform: `translateX(-${currentIndex * 100}%)` }}

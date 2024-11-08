@@ -1,10 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "./style.css";
-import image from "../../assets/baby.jpg";
-import image1 from "../../assets/baby-1.jpg"
-import image2 from "../../assets/baby-2.jpg"
-import image3 from "../../assets/baby-3.webp"
-import image4 from "../../assets/baby-4.jpg"
+import image from "../../../public/image/personnes.jpg";
+import image1 from "../../assets/virtuel.jpg"
 
 export function Banner() {
   const [selectOption, setSelectOption] = useState("Category");
@@ -116,10 +113,7 @@ export function Banner() {
                 <div className="col-lg-7 col-sm-12">
             
                 <div className="w-[100%] h-[100vh] relative">
-                    <img className=" w-[280px] h-[280px] absolute  top-[-6em] right-[-1em] border-4 border-white rounded-[400px]" src={image1} alt="image baby extrait de pixabay" />
-                    <img className="w-[250px] h-[250px] absolute top-[2em] left-[1em] left- border-4 border-white rounded-[400px]" src={image2} alt="" />
-                    <img className="w-[200px] h-[200px] absolute  top-[20em] right-[2em] border-4 border-white rounded-[400px]" src={image3} alt="" />
-                    <img className="w-[350px] h-[350px] absolute  top-[4em] right-[8em] border-4 border-white rounded-[400px]" src={image4} alt="" />
+                    <img className=" rounded-xl border-4 border-white" src={image1} alt="image baby extrait de pixabay" />
                 </div>
                 </div>
                 </>

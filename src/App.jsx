@@ -15,8 +15,8 @@ export function App() {
         <Banner />
         <Formations />
         <Products />
-        <Carrousels/>
         <Accordeon/>
+        <Carrousels/>
         <Footer/>
       </div>
     </>

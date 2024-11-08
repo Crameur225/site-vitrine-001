@@ -1,4 +1,4 @@
-@media (max-width: 700px){
+@media (max-width: 1200px){
     .cont{
         width: 100%;
     }
@@ -11,6 +11,10 @@
         align-items: center;
     }
     .flexons{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
         padding: 8em;
         margin: 1em !important;
     }
