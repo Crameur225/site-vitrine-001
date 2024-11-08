@@ -2,6 +2,9 @@
     .cont{
         width: 100%;
     }
+    .box{
+        width: 100%;
+    }
     .container{
         flex-direction: column;
         justify-content: center;

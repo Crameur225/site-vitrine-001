@@ -8,8 +8,8 @@ export function Formation(){
             InfoFormations.map((information) =>{
             return(
             <div key={information.id}>
-            <div className='w-[25em] py-4 rounded m-auto shadow'>
-            <img style={{borderRadius: "25px", width:"20em", margin: "10px auto"}}  src={information.img} alt={information.title} />
+            <div className={`w-[25em] py-4 rounded m-auto shadow ${s.box}`}>
+            <img style={{borderRadius: "25px", width:"20em", margin: "10px auto"}}   src={information.img} alt={information.title} />
             <h2 className='font-medium text-2xl text-center'>{information.title}</h2>
             <p className={`pt-4 w-auto  px-3  tracking-widest ${s.cont}`}>{information.content}</p>
             <p className='px-3 pb-4'>By {information.autheur}</p>
