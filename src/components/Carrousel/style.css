@@ -1,0 +1,13 @@
+@media (max-width: 700px) {
+    
+    .classe-fist{
+        flex-direction: column;
+        align-items: center;
+    }
+    .classe-fist img{
+        width: 90%;
+    }
+    .classe-text{
+        width: 90%;
+    }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 700px){
+    .cont{
+        width: 100%;
+    }
+    .container{
+        overflow-x: hidden;
+    }
+}
